@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap');
+@import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
+@import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-banner-quadrosquare-caps/css/bpg-banner-quadrosquare-caps.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Baumans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Abel';
+    resize: none;
+}
+body{
+    height: 100%;
+    background-color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* header and navbar */
+
+.header {
+    height: 100px;
+    padding: 50px;
+    width: 100%;
+  }
+  
+  .nav-bar {
+    z-index: 1000; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: fixed;
+    padding: 12px 20px;
+    background-color: transparent;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 10px  black;
+}
+
+.logo img {
+    width: 13em;
+}
+.logo a{
+  color: #C0C0C0;
+  font-family: "Baumans", system-ui;
+  font-size: 45px;
+  align-items: center;
+}
+
+.menu{
+    align-items: center;
+}
+
+.menu li a{
+    font-size: 30px;
+    margin: 0 15px;
+    font-family: "Abel", sans-serif;
+    transition: 0.3s;
+}
+.menu li a:hover{
+   color: #5287d6;
+}
+.not-active-li{
+    border: 1px solid #5287d6;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.not-active-li:hover{
+    background-color: rgba(0, 0, 0, 0.356);
+}
+  
+
+
+.menu {
+    display: flex;
+}
+
+
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+    z-index: 999;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {
+    display: none;
+}
+.menu li a{
+    color: #C0C0C0;
+}
+
+
+@media(max-width: 1150px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: -1;
+        transition: all 0.3s ease-in;
+        background-color: black;
+    }
+    .menu li {margin-top: 40px; }
+    .menu li a {padding: 10px; z-index: 999999;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+
+}
+
+
+/* burger menu */
+.container {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 999999;
+  }
+  
+.burger-menu-name{
+    color: #C0C0C0;
+    font-family: "Baumans", system-ui;
+}
+
+
+/* main */
+
+
+
+
+/* Background Video */
+#home-sec {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.676);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    color: #C0C0C0;
+    margin: 0 3em;
+}
+
+.content h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    font-family: "Abel", sans-serif;
+}
+
+.trade-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.trade-button:hover {
+    background-color: #003179;
+}
+
+
+
+/* Footer */
+
+
+footer {
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+    padding: 5em 5em 0 5em;
+    color: #C0C0C0;
+}
+
+footer .FootMain {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+footer .FootCopyright {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    color: #C0C0C0;
+    font-family: "Abel";
+}
+
+footer .FootSocial{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+footer .FootSocial ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .FootSocial ul li a {
+    color: #C0C0C0;
+    font-size: 30px;
+}
+
+footer .FootNav ul li a {
+    color: #C0C0C0;
+    font-size: 30px;
+}
+footer .FootNav ul li a:hover {
+    color: #8a8a8a;
+}
+
+.FootsendMessage form input,
+.FootsendMessage form textarea {
+    padding: 15px;
+    width: 300px;
+    font-size: 20px;
+    background-color: #8f8f8f;
+    font-family: "Abel";
+    border: none;
+}
+
+.FootsendMessage form input::placeholder,
+.FootsendMessage form textarea::placeholder {
+    color: #000000; 
+}
+
+.FootsendMessage form textarea {
+    min-height: 200px;
+}
+
+.FootsendMessage form {
+    margin-top: 20px;
+}
+
+.submit-button {
+    background-color: #003179;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 23px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #001f4d;
+}
+
+
+
+.author{
+    color: #C0C0C0;
+    font-size: 20px;
+}
+
+
+
+/* ScrollBar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #959595; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #434343; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #303030; 
+}

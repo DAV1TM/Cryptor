@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="AcademicHub მთავარი">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/weblogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <title>Cryptor | Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'>Cryptor</a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a style="color: #5287d6;" href="#">Home</a></li>
+                    <li><a class="active-li" href="src/trade.html">Trade</a></li>
+                    <li><a class="active-li" href="#">News</a></li>
+                    <li><a class="active-li" href="#">Products</a></li>
+                    <li><a class="active-li" href="#">About</a></li>
+                    <li><a class="active-li" href="#">Contact</a></li>
+                    <li><a class="not-active-li" href="src/signin.html">Sign In</a></li>
+                </span>
+                <label for="check" class="open-menu">
+                    <div class="container">
+                        <h1 class="burger-menu-name" >Menu</h1>
+                    </div>
+                </label>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="home-sec" class="background-clip">
+            <video autoplay muted loop id="background-video">
+                <source src="assets/homeMainVid.mp4" type="video/mp4">
+            </video>
+            <div class="overlay">
+                <div class="content">
+                    <h1>Your Gateway to the Crypto World</h1>
+                    <a href="src/trade.html" class="trade-button">Let's Trade</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="FootMain">
+            <div class="FootsendMessage">
+                <h1>Contact Us</h1>
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+                    <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                    <textarea id="message" name="message" placeholder="Message" required></textarea><br><br>
+                    <button class="submit-button" type="submit">Submit</button>
+                </form>
+            </div>
+            
+            
+    
+            <div class="FootNav">
+                <h1 style="font-size: 36px;">Quick Links</h1>
+                <ul>
+                    <li><a style="color: #5287d6;" href="#">Home</a></li>
+                    <li><a class="active-li" href="src/trade.html">Trade</a></li>
+                    <li><a class="active-li" href="#">News</a></li>
+                    <li><a class="active-li" href="#">Products</a></li>
+                    <li><a class="active-li" href="#">About</a></li>
+                    <li><a class="active-li" href="#">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="FootSocial">
+                <div class="div">
+                    <h1 style="font-size: 36px;">Follow Us</h1>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                </div>
+
+                <a class="author" href="https://mamuladzedavid.netlify.app/" >Powered By Davit M.</a>
+            </div>
+        </div>
+    
+        <div class="FootCopyright">
+            <p>&copy; 2024 Cryptor. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+    
+</body>
+</html>
