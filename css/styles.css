@@ -322,6 +322,7 @@ footer .FootNav ul li a:hover {
 @media screen and (max-width:460px){
     Footer{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
