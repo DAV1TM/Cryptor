@@ -1,6 +1,6 @@
 // Function to fetch live data from the CoinAPI
 async function fetchCoinData() {
-    const apiKey = 'api-key'; 
+    const apiKey = 'B338A692-2294-42E6-ABA8-9FE568B8BCD3'; 
     const apiUrl = 'https://rest.coinapi.io/v1/exchangerate'; 
 
     try {
