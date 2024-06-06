@@ -341,15 +341,16 @@ footer .FootNav ul li a:hover {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #959595; 
+    background: #434343; 
+    
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #434343; 
+    background: #8d8d8dbd; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #303030; 
+    background: #959595; 
 }
