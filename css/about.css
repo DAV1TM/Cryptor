@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap');
+@import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
+@import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-banner-quadrosquare-caps/css/bpg-banner-quadrosquare-caps.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Baumans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.aboutSec{
+    min-height: 100vh;
+    
+}
+
+.aboutUsH1{
+    text-align: center;
+    color: #c0c0c0;
+    font-size: 3em;
+    font-family: "Baumans";
+    margin-top: 50px;
+}
+
+.aboutSec {
+    padding: 50px 0;
+    background-color: #0a0a0a; 
+    color: #b9b9b9; 
+    text-align: center;
+}
+
+
+.aboutArticle {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 20px;
+    padding: 0 30px;
+    margin-top: 20px;
+}
+
+.aboutArticle p {
+    margin-bottom: 20px;
+}
+
+.aboutArticle ol {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.aboutArticle li {
+    margin-bottom: 10px;
+}
+
+.aboutArticle li strong {
+    font-weight: bold;
+}
