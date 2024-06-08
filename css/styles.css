@@ -11,34 +11,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Baumans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Baumans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
     list-style-type: none;
     text-decoration: none;
-    font-family: 'Abel';
+    font-family: 'Abel', sans-serif;
     resize: none;
 }
-body{
+body {
     height: 100%;
-    background-color: #000000;
+    background-color: #060606;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 /* header and navbar */
-
 .header {
     height: 100px;
     padding: 50px;
     width: 100%;
-  }
-  
-  .nav-bar {
-    z-index: 1000; 
+}
+
+.nav-bar {
+    z-index: 1000;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -48,51 +46,51 @@ body{
     padding: 12px 20px;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(7px);
-    box-shadow: 0 0 10px  black;
+    box-shadow: 0 0 10px black;
 }
 
 .logo img {
     width: 13em;
 }
-.logo a{
-  color: #C0C0C0;
-  font-family: "Baumans", system-ui;
-  font-size: 45px;
-  align-items: center;
-}
 
-.menu{
+.logo a {
+    color: #C0C0C0;
+    font-family: "Baumans", system-ui;
+    font-size: 45px;
     align-items: center;
 }
 
-.menu li a{
+.menu {
+    align-items: center;
+}
+
+.menu li a {
     font-size: 30px;
     margin: 0 15px;
     font-family: "Abel", sans-serif;
     transition: 0.3s;
 }
-.menu li a:hover{
-   color: #5287d6;
+
+.menu li a:hover {
+    color: #5287d6;
 }
-.not-active-li{
+
+.not-active-li {
     border: 1px solid #5287d6;
     padding: 5px 10px;
     border-radius: 10px;
     transition: 0.3s;
 }
 
-.not-active-li:hover{
+.not-active-li:hover {
     background-color: rgba(0, 0, 0, 0.356);
 }
-  
-
 
 .menu {
     display: flex;
 }
 
-
-.open-menu , .close-menu {
+.open-menu, .close-menu {
     position: absolute;
     color: var(--color1);
     cursor: pointer;
@@ -100,24 +98,27 @@ body{
     display: none;
     z-index: 999;
 }
+
 .open-menu {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
 }
+
 .close-menu {
     top: 20px;
     right: 20px;
 }
+
 #check {
     display: none;
 }
-.menu li a{
+
+.menu li a {
     color: #C0C0C0;
 }
 
-
-@media(max-width: 1150px){
+@media (max-width: 1150px) {
     .menu {
         flex-direction: column;
         align-items: center;
@@ -132,44 +133,157 @@ body{
         transition: all 0.3s ease-in;
         background-color: black;
     }
-    .menu li {margin-top: 40px; }
-    .menu li a {padding: 10px; z-index: 999999;}
-    .open-menu , .close-menu {display: block;}
-    #check:checked ~ .menu {right: 0;}
-
+    .menu li {
+        margin-top: 40px;
+    }
+    .menu li a {
+        padding: 10px;
+        z-index: 999999;
+    }
+    .open-menu, .close-menu {
+        display: block;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
 }
-
 
 /* burger menu */
 .container {
     display: inline-block;
     cursor: pointer;
     z-index: 999999;
-  }
-  
-.burger-menu-name{
+}
+
+.burger-menu-name {
     color: #C0C0C0;
     font-family: "Baumans", system-ui;
 }
 
-
 /* main */
-
-
-
 
 /* Background Video */
 #home-sec {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px;
 }
+
+.newsSec {
+    min-height: 100vh;
+    width: 100%;
+    padding: 5em 50px;
+    text-align: center;
+}
+
+.newsSec .newsH1 {
+    color: #C0C0C0;
+    font-size: 3em;
+    font-family: "Baumans", system-ui;
+}
+.seeMoreA{
+    color: #C0C0C0;
+    font-size: 3em;
+    font-family: "Abel", system-ui;
+    border: 2px solid #C0C0C0;
+    padding: 15px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.seeMoreA:hover{
+    color: #2d6a96;
+    border-color: #2d6a96;
+}
+
+.cards {
+    justify-content: center;
+    display: flex;
+    flex-flow: wrap;
+    padding: 40px;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.cards .card {
+    height: 550px;
+    width: 390px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(22, 22, 22);
+    align-items: center;
+    box-shadow: 0px 0px 33px -2px rgba(0, 0, 0, 0.75);
+    transition: 0.3s;
+    padding-bottom: 30px;
+}
+
+.cards .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 40px -2px rgba(0,0,0,0.85);
+}
+
+.image-div1, .image-div2, .image-div3 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 200px;
+}
+
+.image-div1 {
+    background-image: url(../assets/news1.png);
+    height: 100%;
+}
+
+.image-div2 {
+    background-image: url(../assets/news2.jpg);
+    height: 100%;
+}
+
+.image-div3 {
+    background-image: url(https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=717/https://s3.cointelegraph.com/uploads/2021-07/b5adfa00-3d72-4126-aada-8e45aeffeb77.jpg);
+    height: 100%;
+}
+
+.description-div {
+    text-align: center;
+    font-size: 16px;
+    color: #7f9fce;
+    padding: 25px;
+}
+
+.description-div p {
+    margin-top: 20px;
+    font-size: 17px;
+    font-family: "Abel", sans-serif;
+}
+
+.btn-div {
+    background-color: #2d6a96;
+    border-radius: 20px;
+    font-size: 19px;
+    border: solid 2px #2d6a96;
+    padding: 10px 25px;
+    color: white;
+    transition: 0.1s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-div:hover {
+    background-color: transparent;
+    color: #2d6a96;
+}
+
+
+
 
 
 #background-video {
@@ -179,7 +293,7 @@ body{
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     z-index: -1;
 }
 
