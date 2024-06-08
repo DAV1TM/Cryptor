@@ -182,6 +182,12 @@ body {
     text-align: center;
 }
 
+@media  screen and (max-width:550px) {
+    .newsSec{
+        padding: 5em 0;
+    }
+}
+
 .newsSec .newsH1 {
     color: #C0C0C0;
     font-size: 3em;
